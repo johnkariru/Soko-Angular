@@ -10,9 +10,10 @@ import { MatListModule } from '@angular/material/list';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'mobile', component: MenuComponent}
-
+  { path: 'home', component: MenuComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
+
 
 
 

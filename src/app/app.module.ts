@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MobileModule } from "./mobile/mobile.module";
+import { WebModule } from './web/web.module';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { MobileModule } from "./mobile/mobile.module";
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        MobileModule
+        MobileModule,
+        WebModule,
     ]
 })
 export class AppModule { }
