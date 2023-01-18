@@ -1,0 +1,92 @@
+.cat-main{
+    margin-bottom: 50px;
+}
+.Cat-container{
+    display: grid;
+    grid-template-columns: auto  auto auto;
+    gap:10px;
+    height: 9vh;
+    .cat-card{
+        &:hover{
+            border: 2px solid #010F8C ;
+        }
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .img-cont {
+            background-color: beige;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .cat-img {
+                
+                img {
+                    height: 80px;
+                    width: 100px;
+                    background-size: cover;
+                }
+            }
+        }
+        
+        .cat-footer{
+            text-align: center;
+            p{
+                color: white;
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mat-card {
+//     width: 150px; /* Set the width of the cards */
+//     height: 150px; /* Set the height of the cards */
+//     background-color: white;
+// }
+
+// img {
+//     width: 100%; /* Make the images fill the entire card */
+//     height: 100%;
+// }
+
+// mat-grid-list {
+//     margin: 10px; /* Add some margin around the grid */
+// }
+// .selectedCard {
+//     border: 1px solid #010F8C;
+// }

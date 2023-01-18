@@ -12,13 +12,16 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
 import { AdvertsComponent } from './adverts/adverts.component';
 import { CategoryComponent } from './category/category.component';
 import { ProductsComponent } from './products/products.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list';
+
+
 
 const routes: Routes = [
   { path: 'home', component: MenuComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
-
-
 
 
 @NgModule({
@@ -37,7 +40,10 @@ const routes: Routes = [
     LayoutModule,
     MatButtonModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatDividerModule,
+    MatGridListModule
   ]
 })
 export class MobileModule { }

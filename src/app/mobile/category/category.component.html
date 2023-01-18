@@ -1,30 +1,86 @@
-<div>
+<div class="cat-main">
     <h3>Category</h3>
-    <div id="Cat-container">
-        <div id="cat-card">
-            <div id="cat-image">
-                <p>Image</p>
+    <div class="Cat-container">
+        <div class="cat-card">
+            
+            <div class="img-cont">
+              <div class="cat-img">
+                  <img mat-card-image [src]="imagePath1">
+              </div>
             </div>
-            <div id="cat-footer">
-                <p>Name</p>
+
+            <div class="cat-footer">
+                <p>Noodles</p>
             </div>
         </div>
 
-        <div id="cat-card">
-            <div id="cat-image">
-                <p>Image</p>
+        <div class="cat-card">
+          <div class="img-cont">
+            <div class="cat-img">
+                <img mat-card-image [src]="imagePath2">
             </div>
-            <div id="cat-footer">
-                <p>Name</p>
+          </div>
+            <div class="cat-footer">
+                <p>Vegetable oils</p>
             </div>
         </div>
-        <div id="cat-card">
-            <div id="cat-image">
-                <p>Image</p>
+        <div class="cat-card">
+          <div class="img-cont">
+            <div class="cat-img">
+                <img mat-card-image [src]="imagePath3">
             </div>
-            <div id="cat-footer">
-                <p>Name</p>
+          </div>
+            <div class="cat-footer">
+                <p>Home care</p>
             </div>
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+    <h3>Categories</h3>
+    <div>
+        <mat-grid-list cols="3">
+          <mat-grid-tile>
+            <mat-card  (click)="changeColor(1)">
+              
+              <div class="bg-image"></div>
+              <mat-card-content>
+                <p>Vegetable Oils</p>
+              </mat-card-content>
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card (click)="changeColor(2)">
+              <div class="bg-image"></div>
+              
+              <mat-card-content>
+                <p>Noodles</p>
+              </mat-card-content>
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card (click)="changeColor(3)">
+              <div class="bg-image"></div>
+              
+              <mat-card-content>
+                <p>Home care </p>
+              </mat-card-content>
+            </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      
+  </div> -->
+  

@@ -1,0 +1,29 @@
+.adCont{
+    background-color: #010F8C;
+    border-radius: 15px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    .adImage{
+        width: 40%;
+        border-radius: 10px;
+        img {
+            width: 100%; /* Make the images fill the entire card */
+            height: 100%;
+        }
+        
+    }
+    .adDescription{
+        
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            color: white;
+            font-size: small;
+        }
+    }
+}
