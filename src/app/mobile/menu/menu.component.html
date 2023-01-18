@@ -20,7 +20,9 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span class="mine">Soko</span>
+      <span class="mine">
+        <img mat-card-image [src]="imagePath5">
+      </span>
     </mat-toolbar>
     <!-- Add Content Here -->
     <div class="myContent">

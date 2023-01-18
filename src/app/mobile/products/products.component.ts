@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
+  imagePath1 = '../../../assets/images/rhapso.png'
+  imagePath2 = '../../../assets/images/postman.png'
 
 }

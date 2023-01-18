@@ -18,4 +18,6 @@ export class MenuComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  imagePath5 = '../../../assets/images/kapa-logo.png'
+
 }

@@ -1,0 +1,30 @@
+.prod-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:10px;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    .prod-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid tomato;
+        .prod-image{
+            
+            // background-image: url('../../../assets/images/rhapso.png');
+            // background-size: cover;   
+
+            img {
+            
+                width: 100%; /* Make the images fill the entire card */
+                height: 100%;
+            }
+        }
+    }
+
+}
