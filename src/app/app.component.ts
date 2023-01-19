@@ -8,13 +8,13 @@ import { Observable, map, shareReplay } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  public isHandset$: Observable<boolean>;
+  public isHandset$: Observable<string>;
   public imagePath5 = '../../../assets/images/kapa-logo.png';
   title = 'soko';
   constructor(private breakpointObserver: BreakpointObserver) {
     this.isHandset$=this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
-      map(result => result.matches),
+      map(result => (result.matches?'mobile':'web')),
       shareReplay()
     );
   }
