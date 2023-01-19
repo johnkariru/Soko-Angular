@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MenuComponent } from './menu/menu.component';
+import { MobileHomeComponent as MobileHomeComponent } from './mobile_home/mobile_home.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -19,19 +19,20 @@ import { MatGridListModule } from '@angular/material/grid-list';
 
 
 const routes: Routes = [
-  { path: 'home', component: MenuComponent },
+  { path: 'home', component: MobileHomeComponent },
+  { path: 'products', component: ProductsComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 
 @NgModule({
   declarations: [
-    MenuComponent,
+    MobileHomeComponent,
     SearchbarComponent,
     AdvertsComponent,
     CategoryComponent,
     ProductsComponent
-    ],
+  ],
   imports: [
     RouterModule.forChild(routes),
     CommonModule,
